@@ -103,7 +103,7 @@ export const login = (login, password) => {
             login: login,
             password: password
         }
-        axios.post("api/users/login", loginData)
+        axios.post("https://pomocnik2021react.herokuapp.com/api/users/login", loginData)
             .then(response => {
                 console.log('Response ' + JSON.stringify(response));
                 const {token} = response.data;
